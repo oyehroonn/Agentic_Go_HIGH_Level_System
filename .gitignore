@@ -1,0 +1,14 @@
+# Secrets
+.env
+.env.local
+
+# Runtime state
+data/
+
+# Dependencies / build
+node_modules/
+dist/
+
+# Logs / OS
+*.log
+.DS_Store

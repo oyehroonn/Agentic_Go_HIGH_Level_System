@@ -1,0 +1,31 @@
+{
+  "name": "ghl-claudebot",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI control plane that operates a GoHighLevel location through reasoning and approved tools.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "cli": "tsx src/index.ts cli",
+    "schedule": "tsx src/index.ts schedule",
+    "check-ghl": "tsx scripts/check-ghl-api.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "dotenv": "^16.4.7",
+    "zod": "^3.24.1",
+    "zod-to-json-schema": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "vitest": "^2.1.8"
+  }
+}
